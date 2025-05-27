@@ -1,39 +1,69 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Miami</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Descubre Miami</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #008cba;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+    section {
+      padding: 2em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1em auto;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #ddd;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Bienvenido a Miami</h1>
+    <p>Una ciudad vibrante, multicultural y soleada</p>
+  </header>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+  <section>
+    <h2>Playas Increíbles</h2>
+    <p>Miami es conocida por sus playas de arena blanca y aguas cristalinas. South Beach es la más famosa.</p>
+    <!-- Sustituye 'playa.jpg' por tu propia imagen -->
+    <img src="images/playa.jpg" alt="Foto de una playa de Miami">
+  </section>
 
+  <section>
+    <h2>Arte y Cultura</h2>
+    <p>El barrio de Wynwood es famoso por sus murales de arte urbano y galerías creativas.</p>
+    <!-- Sustituye 'arte.jpg' por tu propia imagen -->
+    <img src="images/arte.jpg" alt="Mural de arte en Wynwood">
+  </section>
+
+  <section>
+    <h2>Vida Nocturna</h2>
+    <p>La vida nocturna en Miami es vibrante, con clubes famosos, bares frente al mar y música latina en todas partes.</p>
+    <!-- Sustituye 'noche.jpg' por tu propia imagen -->
+    <img src="images/noche.jpg" alt="Club nocturno en Miami">
+  </section>
+
+  <footer>
+    <p>© 2025 Tu Nombre - Página hecha para GitHub Pages</p>
+  </footer>
 </body>
 </html>
-
