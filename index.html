@@ -2,79 +2,91 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Descubre Miami</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f8ff;
-      color: #333;
+    .seccion {
+      display: none;
     }
-    header {
-      background-color: #DDDDDD;
-      color: black;
-      padding: 1em 2em;
-      text-align: center;
-    }
-    section {
-      padding: 2em;
-    }
-    .galeria {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .galeria a {
-      flex: 1 1 30%;
-      text-align: center;
-      text-decoration: none;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .galeria img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background-color: #ddd;
+    .visible {
+      display: block;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a Miami</h1>
-    <p>Una ciudad vibrante, multicultural y soleada</p>
-  </header>
 
-  <section>
-    <h2>Lugares destacados</h2>
-    <div class="galeria">
-      <a href="playa.html">
-        <img src="imagenes/large_Brickell_Pool.jpg" alt="Playas de Miami">
-        <p>Playas Increíbles</p>
-      </a>
-      <a href="arte.html">
-        <img src="imagenes/Wynwood-5.jpg" alt="Arte en Miami">
-        <p>Arte y Cultura</p>
-      </a>
-      <a href="noche.html">
-        <img src="images/noche.jpg" alt="Vida nocturna">
-        <p>Vida Nocturna</p>
-      </a>
-    </div>
-  </section>
+<!-- Header -->
+<header class="w3-container w3-teal w3-center">
+  <h1>Descubre Miami</h1>
+  <p>Haz clic en una imagen para ver más información</p>
+</header>
 
-  <footer>
-    <p>© 2025 Raúl Galindo Bernal</p>
-  </footer>
+<!-- Página principal -->
+<div id="inicio" class="w3-row-padding w3-padding-16 w3-container visible">
+
+  <div class="w3-third">
+    <a href="#" onclick="mostrarSeccion('playa')">
+      <img src="imagenes/playa.jpg" alt="Playa" style="width:100%">
+      <h3>Playas Increíbles</h3>
+    </a>
+  </div>
+
+  <div class="w3-third">
+    <a href="#" onclick="mostrarSeccion('arte')">
+      <img src="imagenes/arte.jpg" alt="Arte" style="width:100%">
+      <h3>Arte y Cultura</h3>
+    </a>
+  </div>
+
+  <div class="w3-third">
+    <a href="#" onclick="mostrarSeccion('noche')">
+      <img src="imagenes/noche.jpg" alt="Noche" style="width:100%">
+      <h3>Vida Nocturna</h3>
+    </a>
+  </div>
+
+</div>
+
+<!-- Sección Playa -->
+<div id="playa" class="w3-container seccion">
+  <h2>Playas Increíbles</h2>
+  <p>Aquí pones tú la información sobre las playas de Miami.</p>
+  <button class="w3-button w3-teal" onclick="volverInicio()">Volver al inicio</button>
+</div>
+
+<!-- Sección Arte -->
+<div id="arte" class="w3-container seccion">
+  <h2>Arte y Cultura</h2>
+  <p>Aquí pones tú la información sobre el arte en Miami.</p>
+  <button class="w3-button w3-teal" onclick="volverInicio()">Volver al inicio</button>
+</div>
+
+<!-- Sección Noche -->
+<div id="noche" class="w3-container seccion">
+  <h2>Vida Nocturna</h2>
+  <p>Aquí pones tú la información sobre la vida nocturna de Miami.</p>
+  <button class="w3-button w3-teal" onclick="volverInicio()">Volver al inicio</button>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-teal w3-center">
+  <p>© 2025 Raúl Galindo Bernal</p>
+</footer>
+
+<!-- JavaScript para mostrar secciones -->
+<script>
+  function mostrarSeccion(id) {
+    document.getElementById("inicio").classList.remove("visible");
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.remove("visible"));
+    document.getElementById(id).classList.add("visible");
+  }
+
+  function volverInicio() {
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.remove("visible"));
+    document.getElementById("inicio").classList.add("visible");
+  }
+</script>
+
 </body>
 </html>
