@@ -21,12 +21,26 @@
     section {
       padding: 2em;
     }
-    img {
-      max-width: 100%;
+    .galeria {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .galeria a {
+      flex: 1 1 30%;
+      text-align: center;
+      text-decoration: none;
+    }
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
       height: auto;
-      display: block;
-      margin: 1em auto;
       border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
@@ -42,28 +56,25 @@
   </header>
 
   <section>
-    <h2>Playas Increíbles</h2>
-    <p>Miami es conocida por sus playas de arena blanca y aguas cristalinas. South Beach es la más famosa.</p>
-    <!-- Sustituye 'playa.jpg' por tu propia imagen -->
-    <img src="imagenes/large_Brickell_Pool.jpg">
-  </section>
-
-  <section>
-    <h2>Arte y Cultura</h2>
-    <p>El barrio de Wynwood es famoso por sus murales de arte urbano y galerías creativas.</p>
-    <!-- Sustituye 'arte.jpg' por tu propia imagen -->
-    <img src="imagenes/Wynwood-5.jpg">
-  </section>
-
-  <section>
-    <h2>Vida Nocturna</h2>
-    <p>La vida nocturna en Miami es vibrante, con clubes famosos, bares frente al mar y música latina en todas partes.</p>
-    <!-- Sustituye 'noche.jpg' por tu propia imagen -->
-    <img src="images/noche.jpg" alt="Club nocturno en Miami">
+    <h2>Lugares destacados</h2>
+    <div class="galeria">
+      <a href="playa.html">
+        <img src="imagenes/large_Brickell_Pool.jpg" alt="Playas de Miami">
+        <p>Playas Increíbles</p>
+      </a>
+      <a href="arte.html">
+        <img src="imagenes/Wynwood-5.jpg" alt="Arte en Miami">
+        <p>Arte y Cultura</p>
+      </a>
+      <a href="noche.html">
+        <img src="images/noche.jpg" alt="Vida nocturna">
+        <p>Vida Nocturna</p>
+      </a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Raúl Galindo Bernal </p>
+    <p>© 2025 Raúl Galindo Bernal</p>
   </footer>
 </body>
 </html>
