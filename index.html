@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Descubre Miami</title>
+  <title>MIAMI CITY</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
-    body,h1,h2,h3,p {font-family: "Raleway", sans-serif}
+    body, h1, h2, h3, p {font-family: "Raleway", sans-serif}
+    body, html {height: 100%; margin: 0;}
     .bgimg {
-      background-image: url('https://www.w3schools.com/w3images/miami.jpg');
+      background-image: url('imagenes/miami-4k.jpg');
       min-height: 100%;
       background-position: center;
       background-size: cover;
@@ -40,12 +41,14 @@
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Descubre Miami
+    <a href="secundaria04.html" target="_blank">secundaria</a>
   </div>
+
   <div class="w3-display-middle">
     <div id="inicio" class="visible w3-center">
-      <h1 class="w3-jumbo w3-animate-top">Bienvenido a Miami</h1>
-      <p class="w3-large">Una ciudad vibrante, multicultural y soleada</p>
+      <h1 class="w3-jumbo w3-animate-top">MIAMI CITY</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">The modern city</p>
       <div class="w3-row-padding w3-margin-top">
         <div class="w3-third item">
           <img src="imagenes/istockphoto-680317604-612x612.jpg" style="width:100%" onclick="mostrarSeccion('playa')" alt="Playas Increíbles">
@@ -62,7 +65,7 @@
       </div>
     </div>
 
-    <div id="playa" class="seccion w3-container">
+    <div id="playa" class="seccion w3-container w3-white w3-card-4">
       <h2>Playas Increíbles</h2>
       <p><strong>South Beach:</strong> La más famosa, con arena blanca, ambiente animado, bares y clubs.</p>
       <p><strong>North Beach:</strong> Más tranquila, ideal para relajarse y familias.</p>
@@ -72,7 +75,7 @@
       <button class="w3-button w3-light-grey volver" onclick="volverInicio()">Volver al inicio</button>
     </div>
 
-    <div id="arte" class="seccion w3-container">
+    <div id="arte" class="seccion w3-container w3-white w3-card-4">
       <h2>Arte y Cultura</h2>
       <p><strong>Wynwood Walls:</strong> Museo al aire libre con impresionantes murales de arte urbano y grafiti.</p>
       <p><strong>Distrito Art Deco (Miami Beach):</strong> Arquitectura única de los años 20-30, con colores pastel y formas geométricas.</p>
@@ -82,4 +85,34 @@
       <button class="w3-button w3-light-grey volver" onclick="volverInicio()">Volver al inicio</button>
     </div>
 
-    <div id="noche" class="seccion w3-container">
+    <div id="noche" class="seccion w3-container w3-white w3-card-4">
+      <h2>Vida Nocturna</h2>
+      <p><strong>South Beach:</strong> El epicentro de la vida nocturna con bares, discotecas y clubes famosos como LIV, Mango’s y Story.</p>
+      <p><strong>Calle Ocho (Little Havana):</strong> Fiestas con música latina, salsa y ambiente auténtico cubano.</p>
+      <p><strong>Eventos y festivales:</strong> Miami acoge eventos como el Ultra Music Festival, Art Basel y Miami Music Week.</p>
+      <p><strong>Bares en rooftops:</strong> Muchos hoteles tienen terrazas con vistas y ambiente para tomar copas al atardecer.</p>
+      <p><strong>Ambiente diverso:</strong> Desde fiestas electrónicas, salsa, reguetón, hasta lounge y bares tranquilos.</p>
+      <button class="w3-button w3-light-grey volver" onclick="volverInicio()">Volver al inicio</button>
+    </div>
+  </div>
+
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="secundaria04.html" target="_blank">secundaria</a>
+  </div>
+</div>
+
+<script>
+  function mostrarSeccion(id) {
+    document.getElementById("inicio").classList.remove("visible");
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.remove("visible"));
+    document.getElementById(id).classList.add("visible");
+  }
+
+  function volverInicio() {
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.remove("visible"));
+    document.getElementById("inicio").classList.add("visible");
+  }
+</script>
+
+</body>
+</html>
