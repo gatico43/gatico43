@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
-    body, h1, h2, h3, p {font-family: "Raleway", sans-serif}
-    body, html {height: 100%; margin: 0;}
+    body, h1, h2, h3, p {
+      font-family: "Raleway", sans-serif;
+      color: white;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
     .bgimg {
-      background-image: url('imagenes/miami-4k.jpg');
+      background-image: url('https://cdn.artphotolimited.com/images/62cfed37bd40b8b711cc54f1/1000x1000/miami.jpg');
       min-height: 100%;
       background-position: center;
       background-size: cover;
@@ -18,8 +24,8 @@
     .seccion {
       display: none;
       padding: 4em;
-      background-color: rgba(255, 255, 255, 0.95);
-      color: #000;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
     }
     .visible {
       display: block;
@@ -34,6 +40,12 @@
     }
     .volver {
       margin-top: 2em;
+    }
+    .w3-card-4 {
+      background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    .w3-text-white h1, .w3-text-white h2, .w3-text-white h3, .w3-text-white p {
+      color: white;
     }
   </style>
 </head>
@@ -65,7 +77,7 @@
       </div>
     </div>
 
-    <div id="playa" class="seccion w3-container w3-white w3-card-4">
+    <div id="playa" class="seccion w3-container w3-card-4">
       <h2>Playas Increíbles</h2>
       <p><strong>South Beach:</strong> La más famosa, con arena blanca, ambiente animado, bares y clubs.</p>
       <p><strong>North Beach:</strong> Más tranquila, ideal para relajarse y familias.</p>
@@ -75,7 +87,7 @@
       <button class="w3-button w3-light-grey volver" onclick="volverInicio()">Volver al inicio</button>
     </div>
 
-    <div id="arte" class="seccion w3-container w3-white w3-card-4">
+    <div id="arte" class="seccion w3-container w3-card-4">
       <h2>Arte y Cultura</h2>
       <p><strong>Wynwood Walls:</strong> Museo al aire libre con impresionantes murales de arte urbano y grafiti.</p>
       <p><strong>Distrito Art Deco (Miami Beach):</strong> Arquitectura única de los años 20-30, con colores pastel y formas geométricas.</p>
@@ -85,7 +97,7 @@
       <button class="w3-button w3-light-grey volver" onclick="volverInicio()">Volver al inicio</button>
     </div>
 
-    <div id="noche" class="seccion w3-container w3-white w3-card-4">
+    <div id="noche" class="seccion w3-container w3-card-4">
       <h2>Vida Nocturna</h2>
       <p><strong>South Beach:</strong> El epicentro de la vida nocturna con bares, discotecas y clubes famosos como LIV, Mango’s y Story.</p>
       <p><strong>Calle Ocho (Little Havana):</strong> Fiestas con música latina, salsa y ambiente auténtico cubano.</p>
