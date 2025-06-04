@@ -10,10 +10,33 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
+body {
+  font-family: "Open Sans";
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.header-background {
+  background-image: url('imagenes/miami-header.jpg'); /* Cambia si tu imagen tiene otro nombre */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 64px 16px;
+  text-align: center;
+}
+.header-background h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.header-background h6 {
+  font-size: 20px;
+}
 </style>
 </head>
-<body class="w3-light-grey">
+
+<body>
 
 <div class="w3-bar w3-black w3-hide-small">
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
@@ -26,9 +49,11 @@ body {font-family: "Open Sans"}
 </div>
 
 <div class="w3-content" style="max-width:1600px">
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>Famosos en Miami</b></h1>
-    <h6>Algunas de las personas y lugares más conocidos de <span class="w3-tag">Miami</span></h6>
+
+  <!-- Encabezado con imagen de fondo -->
+  <header class="header-background">
+    <h1><b>Famosos en Miami</b></h1>
+    <h6>Algunas de las personas y lugares más conocidos de <span class="w3-tag w3-black">Miami</span></h6>
   </header>
 
   <div class="w3-row w3-padding w3-border">
@@ -78,5 +103,6 @@ body {font-family: "Open Sans"}
     </div>
   </div>
 </div>
+
 </body>
 </html>
