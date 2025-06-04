@@ -37,7 +37,7 @@ body {
 .futbol-icono-flotante {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 70px; /* Lo alejamos un poco para que no choque con el nuevo botón */
   background-color: #333;
   color: white;
   border-radius: 50%;
@@ -52,24 +52,24 @@ body {
   background-color: #555;
 }
 
-/* Botón volver a página principal */
+/* Nuevo botón para volver a la página principal */
 .volver-icono-flotante {
   position: fixed;
   top: 20px;
-  left: 20px;
-  background-color: #333;
+  right: 20px;
+  background-color: #007BFF;
   color: white;
   border-radius: 50%;
   padding: 14px 16px;
   font-size: 22px;
-  z-index: 1000;
+  z-index: 1001; /* Por encima del otro */
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  text-decoration: none;
+  box-shadow: 0 0 8px rgba(0,123,255,0.6);
 }
 .volver-icono-flotante:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
 
 .seccion-rosa {
@@ -103,14 +103,14 @@ body {
 
 <body>
 
+<!-- Botón para volver a la página principal -->
+<a href="https://gatico43.github.io/gatico43/" class="volver-icono-flotante" title="Volver a la página principal">
+  <i class="fa fa-home"></i>
+</a>
+
 <!-- Icono de fútbol flotante -->
 <a href="https://es.intermiamicf.com/standings/#season=MLS-SEA-0001K9&live=false" target="_blank" class="futbol-icono-flotante" title="Ver clasificación Inter Miami">
   <i class="fa fa-soccer-ball-o"></i>
-</a>
-
-<!-- Botón de volver a la página principal -->
-<a href="miami.html" class="volver-icono-flotante" title="Volver a la página principal">
-  <i class="fa fa-home"></i>
 </a>
 
 <div class="w3-content" style="max-width:1600px">
