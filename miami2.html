@@ -35,8 +35,28 @@ body {
 }
 
 .seccion-negra {
-  background-color: #fbe3e3;
-  color: black;
+  background-color: #111;
+  color: white;
+  border-radius: 12px;
+}
+
+.seccion-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.seccion-contenido img {
+  width: 300px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.seccion-contenido p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
 }
 </style>
 </head>
@@ -55,7 +75,7 @@ body {
 
 <div class="w3-content" style="max-width:1600px">
 
-  <!-- Encabezado con imagen de fondo -->
+  <!-- Encabezado -->
   <header class="header-background">
     <h1><b>Famosos en Miami</b></h1>
     <h6>Algunas de las personas y lugares más conocidos de <span class="w3-tag w3-black">Miami</span></h6>
@@ -66,36 +86,30 @@ body {
       
       <!-- Sección Bad Bunny -->
       <div class="w3-container w3-margin w3-padding-large seccion-negra">
-        <div class="w3-center">
-          <h3>Bad Bunny en Miami</h3>
-          <h5>El ícono del reguetón, <span class="w3-opacity">Junio 2025</span></h5>
-        </div>
-        <div class="w3-justify">
-          <img src="imagenes/badbunny miami.jpg" alt="Bad Bunny" style="width:65%" class="w3-padding-16">
+        <h3 class="w3-center">Bad Bunny en Miami</h3>
+        <h5 class="w3-center">El ícono del reguetón, <span class="w3-opacity">Junio 2025</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/badbunny miami.jpg" alt="Bad Bunny">
           <p><strong>Bad Bunny</strong> visita con frecuencia Miami por sus conciertos, fiestas y colaboraciones. Es una figura clave en el ambiente musical latino en la ciudad.</p>
         </div>
       </div>
 
       <!-- Sección Miami Beach -->
       <div class="w3-container w3-margin w3-padding-large seccion-negra">
-        <div class="w3-center">
-          <h3>Miami Beach</h3>
-          <h5>Una de las playas más famosas del mundo, <span class="w3-opacity">Todo el año</span></h5>
-        </div>
-        <div class="w3-justify">
-          <img src="imagenes/miamibeach.jpg" style="width:65%" class="w3-padding-16">
+        <h3 class="w3-center">Miami Beach</h3>
+        <h5 class="w3-center">Una de las playas más famosas del mundo, <span class="w3-opacity">Todo el año</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/miamibeach.jpg" alt="Miami Beach">
           <p><strong>Miami Beach</strong> es un ícono turístico, conocido por su vida nocturna, arquitectura art déco y arena blanca. Celebridades y turistas la visitan constantemente.</p>
         </div>
       </div>
 
       <!-- Sección Messi -->
       <div class="w3-container w3-margin w3-padding-large seccion-negra">
-        <div class="w3-center">
-          <h3>Messi en el Inter Miami</h3>
-          <h5>Una leyenda del fútbol en Estados Unidos, <span class="w3-opacity">Desde 2023</span></h5>
-        </div>
-        <div class="w3-justify">
-          <img src="imagenes/messi miami.jpg" alt="Messi" style="width:65%" class="w3-padding-16">
+        <h3 class="w3-center">Messi en el Inter Miami</h3>
+        <h5 class="w3-center">Una leyenda del fútbol en Estados Unidos, <span class="w3-opacity">Desde 2023</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/messi miami.jpg" alt="Messi">
           <p><strong>Lionel Messi</strong> revolucionó la MLS al unirse al Inter de Miami. Sus partidos atraen a multitudes y han dado un nuevo impulso al fútbol en la ciudad.</p>
         </div>
       </div>
