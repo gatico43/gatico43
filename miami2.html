@@ -34,17 +34,22 @@ body {
   font-size: 20px;
 }
 
-.info-icono {
+.futbol-icono-flotante {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   background-color: #333;
   color: white;
-  padding: 10px 16px;
-  text-align: right;
+  border-radius: 50%;
+  padding: 14px 16px;
+  font-size: 22px;
+  z-index: 1000;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
-.info-icono a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+.futbol-icono-flotante:hover {
+  background-color: #555;
 }
 
 .seccion-rosa {
@@ -78,12 +83,10 @@ body {
 
 <body>
 
-<!-- Icono informativo -->
-<div class="info-icono">
-  <a href="https://palenquepizzeria.com/todo-lo-que-necesitas-saber-sobre-la-ciudad-de-miami/" target="_blank">
-    <i class="fa fa-info-circle"></i> Más información sobre Miami
-  </a>
-</div>
+<!-- Icono de fútbol flotante -->
+<a href="https://es.intermiamicf.com/standings/#season=MLS-SEA-0001K9&live=false" target="_blank" class="futbol-icono-flotante" title="Ver clasificación Inter Miami">
+  <i class="fa fa-soccer-ball-o"></i>
+</a>
 
 <div class="w3-content" style="max-width:1600px">
 
@@ -96,9 +99,7 @@ body {
   <div class="w3-row w3-padding w3-border">
     <div class="w3-col l8 s12">
 
-      <!-- Secciones (Bad Bunny, Miami Beach, Messi) aquí igual que antes... -->
-      <!-- (Pego solo una para ahorrar espacio, pero tú mantienes las 3) -->
-
+      <!-- Sección Bad Bunny -->
       <div class="w3-container seccion-rosa">
         <h3 class="w3-center">Bad Bunny en Miami</h3>
         <h5 class="w3-center">El ícono del reguetón, <span class="w3-opacity">Junio 2025</span></h5>
@@ -108,18 +109,30 @@ body {
         </div>
       </div>
 
-      <!-- Agrega aquí las otras dos secciones igual -->
+      <!-- Sección Miami Beach -->
+      <div class="w3-container seccion-rosa">
+        <h3 class="w3-center">Miami Beach</h3>
+        <h5 class="w3-center">Una de las playas más famosas del mundo, <span class="w3-opacity">Todo el año</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/miamibeach.jpg" alt="Miami Beach">
+          <p><strong>Miami Beach</strong> es un ícono turístico, conocido por su vida nocturna, arquitectura art déco y arena blanca. Celebridades y turistas la visitan constantemente.</p>
+        </div>
+      </div>
+
+      <!-- Sección Messi -->
+      <div class="w3-container seccion-rosa">
+        <h3 class="w3-center">Messi en el Inter Miami</h3>
+        <h5 class="w3-center">Una leyenda del fútbol en Estados Unidos, <span class="w3-opacity">Desde 2023</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/messi miami.jpg" alt="Messi">
+          <p><strong>Lionel Messi</strong> revolucionó la MLS al unirse al Inter de Miami. Sus partidos atraen a multitudes y han dado un nuevo impulso al fútbol en la ciudad.</p>
+        </div>
+      </div>
 
     </div>
 
     <div class="w3-col l4">
-      <div class="w3-white w3-margin">
-        <img src="imagenes/6543939c3a2fb6d8fed8fef8_65438bd46165a2810bca7159_downtown-miami.webp" alt="Miami Flag" style="width:100%" class="w3-grayscale">
-        <div class="w3-container w3-black">
-          <h4>Sobre Miami</h4>
-          <p>Miami es conocida por su diversidad cultural, música latina, playas icónicas y celebridades que la eligen como su hogar o destino habitual.</p>
-        </div>
-      </div>
+      <!-- Vacío como pediste -->
     </div>
   </div>
 </div>
